@@ -56,6 +56,7 @@
      <Compile Include="Assets\epyphany\demo\ressources\move.cs" />
      <Compile Include="Assets\epyphany\demo\ressources\rotate.cs" />
      <Compile Include="Assets\MusicSource.cs" />
+     <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
      <None Include="Assets\epyphany\ReadMe.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
