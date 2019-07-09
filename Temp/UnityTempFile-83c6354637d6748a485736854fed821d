@@ -1,12 +1,12 @@
 /target:library
 /nowarn:0169
-/out:"Temp/Assembly-CSharp-Editor-firstpass.dll"
+/out:"Temp/Assembly-CSharp-Editor.dll"
 /debug:portable
 /optimize-
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
-/reference:"Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
+/reference:"Library/ScriptAssemblies/Assembly-CSharp.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -71,6 +71,8 @@
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEditor.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/Unity.Locator.dll"
+/reference:"Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
+/reference:"Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll"
 /reference:"Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
 /reference:"Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
 /reference:"Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll"
@@ -302,9 +304,4 @@
 /define:UNITY_TEAM_LICENSE
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"Assets/Standard Assets/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs"
-"Assets/Standard Assets/Editor/Water/Water4/GerstnerDisplaceEditor.cs"
-"Assets/Standard Assets/Editor/Water/Water4/PlanarReflectionEditor.cs"
-"Assets/Standard Assets/Editor/Water/Water4/SpecularLightingEditor.cs"
-"Assets/Standard Assets/Editor/Water/Water4/WaterBaseEditor.cs"
-"Assets/Standard Assets/Editor/Water/Water4/WaterEditorUtility.cs"
+"Assets/StarSparrow/Readme/Readme Files/Scripts/Editor/ReadmeEditor.cs"

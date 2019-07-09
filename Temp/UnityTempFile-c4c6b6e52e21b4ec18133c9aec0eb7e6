@@ -6,7 +6,6 @@
 /nostdlib+
 /preferreduilang:en-US
 /langversion:latest
-/reference:"Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -69,6 +68,7 @@
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/UnityEditor.dll"
 /reference:"/Applications/Unity/Hub/Editor/2018.4.3f1/Unity.app/Contents/Managed/Unity.Locator.dll"
+/reference:"Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll"
 /reference:"Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
 /reference:"Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll"
 /reference:"Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll"
@@ -286,4 +286,5 @@
 "Assets/epyphany/demo/ressources/move.cs"
 "Assets/epyphany/demo/ressources/rotate.cs"
 "Assets/MusicSource.cs"
+"Assets/Player.cs"
 "Assets/StarSparrow/Readme/Readme Files/Scripts/Readme.cs"
