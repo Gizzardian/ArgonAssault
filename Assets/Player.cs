@@ -6,9 +6,9 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour
 {
     [Tooltip("In meters/second")] [SerializeField] float xSpeed = 40f;
-    [Tooltip("In meters")] [SerializeField] float xRange = 15f;
+    [Tooltip("In meters")] [SerializeField] float xRange = 5f;
 
-    [Tooltip("In meters")] [SerializeField] float xRangeUp = 10f;
+    [Tooltip("In meters")] [SerializeField] float yRange = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +27,11 @@ public class Player : MonoBehaviour
         transform.localPosition = new Vector3(clampedXPos, transform.localPosition.y, transform.localPosition.z);
 
         // my try
-        float xThrowUp = CrossPlatformInputManager.GetAxis("Vertical");
-        float xOffsetUp = xThrowUp * xSpeed * Time.deltaTime;
-        float rawXPosUp = transform.localPosition.y + xOffsetUp;
-        float clampedXPosUp = Mathf.Clamp(rawXPosUp, -xRangeUp, xRangeUp);
-        transform.localPosition = new Vector3(transform.localPosition.x, clampedXPosUp, transform.localPosition.z);
+        float yThrow = CrossPlatformInputManager.GetAxis("Vertical");
+        float yOffset = yThrow * xSpeed * Time.deltaTime;
+        float rawYPos = transform.localPosition.y + yOffset;
+        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
+        transform.localPosition = new Vector3(transform.localPosition.x, clampedYPos, transform.localPosition.z);
 
     }
 }
