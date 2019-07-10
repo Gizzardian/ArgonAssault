@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 6775968130591189234}
   - component: {fileID: 6805803962431454900}
   - component: {fileID: 6796731192598369656}
+  - component: {fileID: 593630262}
   m_Layer: 0
   m_Name: Playter Ship
   m_TagString: Untagged
@@ -281,7 +282,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6774414479262364362}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 111.3, y: -19.7, z: 294.43835}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -334,6 +335,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &593630262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774414479262364362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2d9f16f1f3d4d9ebd978b167de2226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpeed: 30
+  xRange: 15
+  yRange: 10
 --- !u!1 &6774873334293178548
 GameObject:
   m_ObjectHideFlags: 0
