@@ -28,7 +28,10 @@ public class Player : MonoBehaviour
     private void ProcessRotation()
     {
         // set local rotation
-        transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+        float pitch = 0f;
+        float yaw = 0f;
+        float roll = 0f;
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
     private void ProcessTranslation()

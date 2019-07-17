@@ -640,22 +640,22 @@ PrefabInstance:
     - target: {fileID: 6775968130591189234, guid: 5c318c6686c714163834912b13e21a60,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.2860499
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6775968130591189234, guid: 5c318c6686c714163834912b13e21a60,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.29730436
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6775968130591189234, guid: 5c318c6686c714163834912b13e21a60,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.09385945
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6775968130591189234, guid: 5c318c6686c714163834912b13e21a60,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9060773
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6775968130591189234, guid: 5c318c6686c714163834912b13e21a60,
         type: 3}
@@ -665,25 +665,17 @@ PrefabInstance:
     - target: {fileID: 6775968130591189234, guid: 5c318c6686c714163834912b13e21a60,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -35.042
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6775968130591189234, guid: 5c318c6686c714163834912b13e21a60,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 36.332
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6775968130591189234, guid: 5c318c6686c714163834912b13e21a60,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 593630262, guid: 5c318c6686c714163834912b13e21a60, type: 3}
-      propertyPath: xSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 593630262, guid: 5c318c6686c714163834912b13e21a60, type: 3}
-      propertyPath: xRange
-      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c318c6686c714163834912b13e21a60, type: 3}
