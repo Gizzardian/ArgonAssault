@@ -11,6 +11,11 @@ public class Player : MonoBehaviour
 
     [Tooltip("In meters")] [SerializeField] float yRange = 10f;
 
+    [SerializeField] float positionPitchFactor = -5f;
+
+    float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+    float yThrow = CrossPlatformInputManager.GetAxis("Vertical");
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +33,7 @@ public class Player : MonoBehaviour
     private void ProcessRotation()
     {
         // set local rotation
-        float pitch = 0f;
+        float pitch = transform.localPosition.y * positionPitchFactor + yThrow;
         float yaw = 0f;
         float roll = 0f;
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
@@ -36,8 +41,7 @@ public class Player : MonoBehaviour
 
     private void ProcessTranslation()
     {
-        // x-axis
-        float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+        // x-axis   
         // https://www.udemy.com/unitycourse2/learn/lecture/8477780#questions
         float xOffset = xThrow * xSpeed * Time.deltaTime;
         float rawXPos = transform.localPosition.x + xOffset;
@@ -45,7 +49,6 @@ public class Player : MonoBehaviour
         transform.localPosition = new Vector3(clampedXPos, transform.localPosition.y, transform.localPosition.z);
 
         // y-axis
-        float yThrow = CrossPlatformInputManager.GetAxis("Vertical");
         float yOffset = yThrow * xSpeed * Time.deltaTime;
         float rawYPos = transform.localPosition.y + yOffset;
         float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
